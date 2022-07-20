@@ -1,3 +1,10 @@
+@font-face {
+    font-family: minecraft_pl_font;
+    src: url("/minecraft_pl_font.woff");
+  }
+img{
+    margin: 0%;
+}
 canvas{
     z-index: 1;
     top:0%;
@@ -5,4 +12,28 @@ canvas{
     position: fixed;
     height: 100%;
     width: 100%;
+}
+.cont{
+    
+    text-align: center;
+    color: white;
+    font-size: 300%;
+    font-family: minecraft_pl_font;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, -15%);
+    position: absolute;
+    z-index: 2;
+}
+.btn{
+    display: block;
+    background-color: #5865F2;
+    border-radius: 15px;
+}
+.title{
+    font-size: 170%;
+}
+a{
+    text-decoration: none;
+    color: white;
 }
