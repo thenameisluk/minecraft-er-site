@@ -2,8 +2,15 @@
     font-family: minecraft_pl_font;
     src: url("/minecraft_pl_font.woff");
   }
+html{
+    background-color: #363840;
+    margin: 0px;
+}
 img{
     margin: 0%;
+}
+.links{
+    font-size: 50%;
 }
 canvas{
     z-index: 1;
@@ -14,7 +21,7 @@ canvas{
     width: 100%;
 }
 .cont{
-    
+    margin: 0px;
     text-align: center;
     color: white;
     font-size: 300%;
@@ -26,14 +33,19 @@ canvas{
     z-index: 2;
 }
 .btn{
+    margin: 0px;
     display: block;
     background-color: #5865F2;
     border-radius: 15px;
 }
 .title{
+    margin: 0px;
+    margin-top: 20%;
     font-size: 170%;
 }
 a{
+    margin: 0px;
+    margin-left: 10px;
     text-decoration: none;
     color: white;
 }

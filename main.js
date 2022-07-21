@@ -20,8 +20,11 @@ const rand  = (min = 1, max = min + (min = 0)) => Math.random() * (max - min) + 
 const setOf     =(c,C)=>{var a=[],i=0;while(i<c){a.push(C(i++))}return a};
 const eachOf    =(a,C)=>{var i=0;const l=a.length;while(i<l && C(a[i],i++,l)!==true);return i};
 const mod = (v,m) => ((v % m) + m) % m;
-
-const particles = setOf(25,() => {
+var ss = window.innerHeight*window.innerWidth;
+var parts = ss/750000;
+//745878
+var part=parts*30;
+const particles = setOf(part,() => {
     return {
       x : rand(innerWidth),
       y : rand(innerHeight),
@@ -73,7 +76,6 @@ function update(timer) {
     }
   
   }else{
-        ctx.fillText("Waiting for GIF image ",10,20);
   
   }
   requestAnimationFrame(update);
