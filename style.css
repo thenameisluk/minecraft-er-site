@@ -12,6 +12,17 @@ img{
 .links{
     font-size: 50%;
 }
+.cat{
+    font-size: 150%;
+}
+.place{
+    font-size: 110%;
+}
+.pimg{
+    height: 6%;
+    width: 6%;
+    border-radius: 50%;
+}
 canvas{
     z-index: 1;
     top:0%;
@@ -28,7 +39,7 @@ canvas{
     font-family: minecraft_pl_font;
     left: 50%;
     top: 0%;
-    transform: translate(-50%, -15%);
+    transform: translate(-50%, 0%);
     position: absolute;
     z-index: 2;
 }
@@ -40,7 +51,6 @@ canvas{
 }
 .title{
     margin: 0px;
-    margin-top: 20%;
     font-size: 170%;
 }
 a{

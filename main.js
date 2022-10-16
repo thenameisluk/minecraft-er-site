@@ -1,3 +1,23 @@
+//ranking
+//https://api.github.com/gists/70b1049e28ae65411c6dd10da94016ec
+fetch("https://api.github.com/gists/70b1049e28ae65411c6dd10da94016ec").then((data)=>data.json().then(jsond=>{
+    var mcppData = JSON.parse(jsond["files"]["mcpp.json"]["content"])
+    console.log(mcppData)
+    var ow = ""
+    mcppData.ranking.o.forEach((p,i)=>{
+        if(p.id!=0)ow += '<div class="place">'+(i*1+1)+'.<img class="pimg" src="'+p.avatar+'"> '+p.name+' : '+p.s+'</div><p>'
+    })
+    document.getElementById("ow").innerHTML = ow
+    var nt = ""
+    mcppData.ranking.n.forEach((p,i)=>{
+        if(p.id!=0)nt += '<div class="place">'+(i*1+1)+'.<img class="pimg" src="'+p.avatar+'"> '+p.name+' : '+p.s+'</div><p>'
+    })
+    document.getElementById("nt").innerHTML = nt
+    
+}))
+
+
+//tło
 //oryginalny kod : https://stackoverflow.com/questions/48234696/how-to-put-a-gif-with-canvas
 const ctx = canvas.getContext("2d");
 
